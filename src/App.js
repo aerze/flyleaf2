@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import { Jumbotron, Button } from 'react-bootstrap';
+
+import logo from '../public/images/WIP-logo-green.png';
 import './App.css';
 
 class App extends Component {
@@ -8,11 +10,13 @@ class App extends Component {
       <div className="App">
         <div className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <h2>Welcome to</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Jumbotron>
+          <h1>Flyleaf.co</h1>
+          <p>This is a simple webpage for browsing and tracking all your favorite web comics!</p>
+          <p><Button bsStyle="primary">Learn more</Button></p>
+        </Jumbotron>
       </div>
     );
   }
